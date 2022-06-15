@@ -1,0 +1,41 @@
+@import '../../scss/variables.scss';
+
+.section-pizza {
+  position: relative;
+  padding: 0 60px;
+  padding-top: 40px;
+  margin: 0 auto;
+  width: 80%;
+  background-color: white;
+}
+
+.section-pizza__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-pizza__reset-btn {
+  position: absolute;
+  left: 65px;
+  bottom: -5px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: $gray-darkness;
+  font-size: 12px;
+  line-height: 12px;
+  cursor: pointer;
+
+  &::before {
+    content: 'X';
+    padding-right: 3px;
+    padding-top: 2px;
+  }
+
+  &:hover,
+  &:focus {
+    color: darken($gray-darkness, 30%);
+  }
+}
